@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "运行当前 C 文件（Ctrl+F5）",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+      "args": [],
+      "cwd": "${fileDirname}",
+      "terminal": "integrated",
+      "preLaunchTask": "build current C file (auto)"
+    }
+  ]
+}

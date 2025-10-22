@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build current C file (auto)",
+      "type": "process",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "$ErrorActionPreference='Stop';$file='${file}';$dir='${fileDirname}';$out=Join-Path $dir ('${fileBasenameNoExtension}.exe');if (Get-Command clang -ErrorAction SilentlyContinue) { & clang -g \"$file\" -o \"$out\" } elseif (Get-Command gcc -ErrorAction SilentlyContinue) { & gcc -g \"$file\" -o \"$out\" } elseif (Get-Command cl -ErrorAction SilentlyContinue) { Push-Location $dir; & cl /nologo /Zi \"${fileBasename}\" /Fe\"${fileBasenameNoExtension}.exe\"; Pop-Location } else { Write-Error 'No C compiler found. Install LLVM (clang), MinGW (gcc), or MSVC (cl).'; exit 1 }"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

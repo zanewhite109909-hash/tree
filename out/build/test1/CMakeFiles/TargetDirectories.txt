@@ -1,0 +1,3 @@
+D:/code/Ccode/tree/out/build/test1/CMakeFiles/bitree.dir
+D:/code/Ccode/tree/out/build/test1/CMakeFiles/edit_cache.dir
+D:/code/Ccode/tree/out/build/test1/CMakeFiles/rebuild_cache.dir
