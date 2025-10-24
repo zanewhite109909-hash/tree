@@ -1,0 +1,23 @@
+# 编译输出
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.i
+*.s
+*.ko
+*.elf
+*.dSYM/
+
+# CMake / Makefile 生成
+build/
+out/
+bin/
+Debug/
+Release/
+cmake-build-*/
+
+# VS Code 本地配置（可选）
+.vscode/settings.json      # 如果含绝对路径就不提交
+*.code-workspace
