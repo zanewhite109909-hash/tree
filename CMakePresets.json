@@ -2,14 +2,15 @@
   "version": 8,
   "configurePresets": [
     {
-      "name": "test1",
+      "name": "test",
       "displayName": "Clang 19.1.7 x86_64-w64-windows-gnu",
-      "description": "正在使用编译器: C = D:\\mingw64\\bin\\clang.exe, CXX = D:\\mingw64\\bin\\clang++.exe",
+      "description": "正在使用编译器: C = E:\\MinGW\\mingw64\\bin\\clang.exe, CXX = E:\\MinGW\\mingw64\\bin\\clang++.exe",
+      "generator": "MinGW Makefiles",
       "binaryDir": "${sourceDir}/out/build/${presetName}",
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
-        "CMAKE_C_COMPILER": "D:/mingw64/bin/clang.exe",
-        "CMAKE_CXX_COMPILER": "D:/mingw64/bin/clang++.exe",
+        "CMAKE_C_COMPILER": "E:/MinGW/mingw64/bin/clang.exe",
+        "CMAKE_CXX_COMPILER": "E:/MinGW/mingw64/bin/clang++.exe",
         "CMAKE_BUILD_TYPE": "Debug"
       }
     }
